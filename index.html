@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>মো: মিজানুর রহমান - ভিজিটিং কার্ড</title>
-  <!-- বাংলা ফন্ট: Hind Siliguri -->
+  <!-- বাংলা ফন্ট -->
   <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
@@ -33,6 +33,7 @@
       align-items: center;
       text-align: center;
       color: #111;
+      background: #fff;
     }
     .card::before {
       content: "";
@@ -48,9 +49,22 @@
       z-index: 1;
       padding: 10px;
     }
+    /* যদি img ব্যবহার করতে চান */
     .card img.logo {
       width: 50px;
       margin-bottom: 5px;
+      border-radius: 4px;
+    }
+    /* বিকল্প: যদি img না দেখায়, div background image */
+    .logo-bg {
+      width: 50px;
+      height: 50px;
+      background-image: url('https://ik.imagekit.io/nasirbam/bna_logo.png?updatedAt=1751567035734'); /* এখানে আপনার লোগো URL দিন */
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 0 auto 5px;
+      border-radius: 4px;
     }
     .card h1 {
       font-size: 16px;
@@ -84,15 +98,13 @@
 </head>
 <body>
   <div class="container">
-    <!-- কার্ড ১: নাম + পদবি + লোগো -->
+    <!-- কার্ড ১ -->
     <div class="card">
       <div class="card-content">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAYAAABVTqh9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA
-GXRFWHRTb2Z0d2FyZQBNYWNpbnRvc2ggUGhvdG8gRWRpdGlvbtZkqYwAAACdSURBVHja7dUxAQAw
-EAOh+jedR1IUuMyA5Tbaw2AMGDBgwIEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDA
-gAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED
-BgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY
-MGDAgAEDBgwYMGDAgAEDBgz+AYvEBPzLwYo2AAAAAElFTkSuQmCC" alt="BNA Logo" class="logo" />
+        <!-- যদি <img> চান, নিচের লাইন আনকমেন্ট করুন -->
+        <!-- <img src="https://nasirbam.github.io/vis/logo.png" alt="BNA Logo" class="logo" /> -->
+        <!-- যদি background image চান, নিচের div ব্যবহার করুন -->
+        <div class="logo-bg"></div>
         <h1>মো: মিজানুর রহমান</h1>
         <h2>
           সভাপতি, বাংলাদেশ নার্সেস এসোসিয়েশন (বিএনএ)<br/>
@@ -101,8 +113,7 @@ MGDAgAEDBgwYMGDAgAEDBgz+AYvEBPzLwYo2AAAAAElFTkSuQmCC" alt="BNA Logo" class="logo
         </h2>
       </div>
     </div>
-
-    <!-- কার্ড ২: যোগাযোগ -->
+    <!-- কার্ড ২ -->
     <div class="card">
       <div class="card-content">
         <p><strong>মোবাইল:</strong> +8801711178894</p>
