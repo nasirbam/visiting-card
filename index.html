@@ -1,100 +1,123 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>মো: মিজানুর রহমান - ভিজিটিং কার্ড</title>
-<!-- বাংলা ওয়েবফন্ট -->
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600&display=swap" rel="stylesheet">
-<style>
-body {
-    font-family: 'Noto Sans Bengali', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #e0f0ea;
-}
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-.card {
-    width: 3.5in;
-    height: 2in;
-    background: white url('https://images.unsplash.com/photo-1588776814546-ec7e5c92b64a?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80') no-repeat center center;
-    background-size: cover;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.3);
-    padding: 10px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-.card img.logo {
-    width: 50px;
-    margin: 0 auto 5px;
-}
-.card h1 {
-    font-size: 16px;
-    color: #006400;
-    margin: 5px 0;
-}
-.card h2 {
-    font-size: 12px;
-    color: #333;
-    line-height: 1.4;
-    margin: 3px 0;
-}
-.card p {
-    font-size: 11px;
-    margin: 2px 0;
-}
-.contact a {
-    display: inline-block;
-    margin: 3px;
-    text-decoration: none;
-    color: #fff;
-    background: #006400;
-    padding: 5px 8px;
-    font-size: 11px;
-    border-radius: 3px;
-}
-.qr img {
-    width: 60px;
-    margin-top: 5px;
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>মো: মিজানুর রহমান - ভিজিটিং কার্ড</title>
+  <!-- বাংলা ফন্ট: Hind Siliguri -->
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Hind Siliguri', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #e5f3ee;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      width: 3.5in;
+      height: 2in;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #111;
+    }
+    .card::before {
+      content: "";
+      background: url('https://www.transparenttextures.com/patterns/connected.png');
+      filter: blur(2px);
+      opacity: 0.1;
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      z-index: 0;
+    }
+    .card-content {
+      position: relative;
+      z-index: 1;
+      padding: 10px;
+    }
+    .card img.logo {
+      width: 50px;
+      margin-bottom: 5px;
+    }
+    .card h1 {
+      font-size: 16px;
+      color: #006400;
+      margin: 5px 0;
+    }
+    .card h2 {
+      font-size: 12px;
+      margin: 3px 0;
+      line-height: 1.4;
+    }
+    .card p {
+      font-size: 11px;
+      margin: 2px 0;
+    }
+    .contact a {
+      display: inline-block;
+      margin: 4px;
+      text-decoration: none;
+      color: #fff;
+      background: #006400;
+      padding: 5px 10px;
+      font-size: 11px;
+      border-radius: 4px;
+    }
+    .qr img {
+      width: 60px;
+      margin-top: 6px;
+    }
+  </style>
 </head>
 <body>
-<div class="container">
-    <!-- Card 1: Logo + Name + Title -->
+  <div class="container">
+    <!-- কার্ড ১: নাম + পদবি + লোগো -->
     <div class="card">
-        <img src="https://nasirbam.github.io/vis/bna_logo.png" alt="BNA Logo" class="logo" />
+      <div class="card-content">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAYAAABVTqh9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA
+GXRFWHRTb2Z0d2FyZQBNYWNpbnRvc2ggUGhvdG8gRWRpdGlvbtZkqYwAAACdSURBVHja7dUxAQAw
+EAOh+jedR1IUuMyA5Tbaw2AMGDBgwIEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDA
+gAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAED
+BgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwY
+MGDAgAEDBgwYMGDAgAEDBgz+AYvEBPzLwYo2AAAAAElFTkSuQmCC" alt="BNA Logo" class="logo" />
         <h1>মো: মিজানুর রহমান</h1>
         <h2>
-            সভাপতি, বাংলাদেশ নার্সেস এসোসিয়েশন (বিএনএ)<br/>
-            ময়মনসিংহ জেলা শাখা<br/>
-            নার্সিং অফিসার, ময়মনসিংহ মেডিকেল কলেজ হাসপাতাল
+          সভাপতি, বাংলাদেশ নার্সেস এসোসিয়েশন (বিএনএ)<br/>
+          ময়মনসিংহ জেলা শাখা<br/>
+          নার্সিং অফিসার, ময়মনসিংহ মেডিকেল কলেজ হাসপাতাল
         </h2>
+      </div>
     </div>
 
-    <!-- Card 2: Contact Info -->
+    <!-- কার্ড ২: যোগাযোগ -->
     <div class="card">
+      <div class="card-content">
         <p><strong>মোবাইল:</strong> +8801711178894</p>
         <p><strong>ই-মেইল:</strong> bna.mymdist@gmail.com</p>
         <div class="contact">
-            <a href="tel:+8801711178894">কল করুন</a>
-            <a href="mailto:bna.mymdist@gmail.com">ই-মেইল করুন</a>
-            <a href="https://www.facebook.com/mijanbnamym" target="_blank">Facebook</a>
+          <a href="tel:+8801711178894">কল করুন</a>
+          <a href="mailto:bna.mymdist@gmail.com">ই-মেইল</a>
+          <a href="https://www.facebook.com/mijanbnamym" target="_blank">Facebook</a>
         </div>
         <div class="qr">
-            <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://www.facebook.com/mijanbnamym&size=100x100" alt="Facebook QR Code" />
+          <p>স্ক্যান করুন:</p>
+          <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://www.facebook.com/mijanbnamym&size=100x100" alt="Facebook QR" />
         </div>
+      </div>
     </div>
-</div>
+  </div>
 </body>
 </html>
